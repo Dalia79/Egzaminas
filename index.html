@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Baigiamasis darbas
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Vartotojų sąrašas</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Vardas</label><label class="validation-error hide" id="nameValidationError">This field is required.</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label>Pavardė</label>
+                        <input type="text" name="surname" id="surname">
+                    </div>
+                    <div>
+                        <label>El.Paštas</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Amžius</label>
+                        <input type="number" name="age" id="age">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Registruoti">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="userList">
+                    <thead>
+                        <tr>
+                            <th>Vardas</th>
+                            <th>Pavardė</th>
+                            <th>El.Paštas</th>
+                            <th>Amžius</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
